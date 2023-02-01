@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="192.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eus.ehu.theme.theme.HelloController">
+   <children>
+      <RadioButton layoutX="211.0" layoutY="88.0" mnemonicParsing="false" onAction="#onApplyTheme" text="Dark Mode">
+         <toggleGroup>
+            <ToggleGroup fx:id="themes" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="313.0" layoutY="88.0" mnemonicParsing="false" onAction="#onApplyTheme" text="Light Mode" toggleGroup="$themes" />
+      <Label layoutX="85.0" layoutY="88.0" prefWidth="125.0" text="Choose your theme:" />
+   </children>
+</AnchorPane>
